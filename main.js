@@ -162,23 +162,42 @@ function initSettings() {
 }
 
 // Game Modules
-import * as MemoryGame from './games/memory.js';
-import * as SimonGame from './games/simon.js';
-import * as SortingGame from './games/sorting.js';
-import * as SlidingGame from './games/sliding.js';
-import * as MazeGame from './games/maze.js';
-import * as CountingGame from './games/counting.js';
-import * as ShapeGame from './games/shapeMatcher.js';
-import * as ColorGame from './games/colorMixer.js';
-import * as QuickGame from './games/quickLogic.js';
-import * as SolarGame from './games/solarSystem.js';
-import * as OceanGame from './games/ocean.js';
-import * as ForestGame from './games/forest.js';
+import * as MemoryGame from "./games/memory.js";
+import * as SimonGame from "./games/simon.js";
+import * as SortingGame from "./games/sorting.js";
+import * as SlidingGame from "./games/sliding.js";
+import * as MazeGame from "./games/maze.js";
+import * as CountingGame from "./games/counting.js";
+import * as ShapeGame from "./games/shapeMatcher.js";
+import * as ColorGame from "./games/colorMixer.js";
+import * as QuickGame from "./games/quickLogic.js";
+import * as SolarGame from "./games/solarSystem.js";
+import * as OceanGame from "./games/ocean.js";
+import * as ForestGame from "./games/forest.js";
 
 // --- Initialization ---
-    registerGame('space', 'Space', '🪐', '#2D3436', SolarGame.init);
-    registerGame('ocean', 'Ocean', '🐠', '#0984e3', OceanGame.init);
-    registerGame('forest', 'Forest', '🌲', '#00b894', ForestGame.init);
+document.addEventListener("DOMContentLoaded", () => {
+  loadState();
+  initSettings();
 
-    renderGameGrid();
+  // Global Navigation
+  document.getElementById("back-home-btn").addEventListener("click", goHome);
+
+  // Register Games
+  registerGame("memory", "Memory", "🎴", "#FF6B6B", MemoryGame.init);
+  registerGame("simon", "Pattern", "💡", "#4ECDC4", SimonGame.init);
+  registerGame("sorting", "Sorting", "🧺", "#FFEEAD", SortingGame.init);
+  registerGame("logic", "Puzzle", "🧩", "#96CEB4", SlidingGame.init);
+  registerGame("maze", "Maze", "🗺️", "#D4A5A5", MazeGame.init);
+  registerGame("counting", "Math", "1️⃣", "#9FA8DA", CountingGame.init);
+  registerGame("shapes", "Shapes", "📐", "#FFD93D", ShapeGame.init);
+  registerGame("color", "Colors", "🎨", "#FF6B6B", ColorGame.init);
+  registerGame("quick", "Reflex", "⚡", "#6C5CE7", QuickGame.init);
+
+  // 3D Scenes
+  registerGame("space", "Space", "🪐", "#2D3436", SolarGame.init);
+  registerGame("ocean", "Ocean", "🐠", "#0984e3", OceanGame.init);
+  registerGame("forest", "Forest", "🌲", "#00b894", ForestGame.init);
+
+  renderGameGrid();
 });
