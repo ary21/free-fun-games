@@ -1,11 +1,23 @@
 # Kid-Friendly Mini-Game Hub 🎮
 
-A collection of interactive, educational mini-games designed for children aged 4-10. Features logic puzzles, memory training, sorting activities, and a 3D solar system explorer.
+A collection of **12** interactive, educational mini-games and 3D scenes designed for children aged 4-10. Features logic puzzles, memory training, sorting activities, and immersive 3D environments.
 
 ## Features ✨
 
-- **6 Interactive Games**: Memory Match, Pattern Sequence, Sorting, Logic Blocks, Maze, and Counting.
-- **3D Space Explorer**: An interactive 3D solar system scene using Three.js.
+- **9 Interactive Games**:
+  1.  **Memory Match**: Flip cards to find pairs.
+  2.  **Pattern Sequence**: Follow the lights (Simon).
+  3.  **Sorting**: Sort animals, fruits, and vehicles.
+  4.  **Puzzle**: Classic sliding tile puzzle.
+  5.  **Maze**: Find the path to the flag.
+  6.  **Counting**: Math and counting questions.
+  7.  **Shapes**: Match objects to their shadows.
+  8.  **Colors**: Mix paints to create new colors.
+  9.  **Quick Logic**: Tap items based on changing rules (Reflex).
+- **3 Interactive 3D Scenes**:
+  1.  **Space**: Solar System explorer.
+  2.  **Ocean**: Underwater scene with swimming fish.
+  3.  **Forest**: Nature scene with interactive trees.
 - **Kid-Friendly UI**: Large buttons, bright colors, simple icons (emojis), and no text-heavy instructions.
 - **Offline Capable**: Works purely in the browser with no backend requirements.
 - **Parental Controls**: Settings to toggle sound/music and reset progress.
@@ -17,7 +29,7 @@ This project is a static web application. You don't need to install complex depe
 
 1.  **Open the Folder**: Navigate to this folder on your computer.
 2.  **Launch**: Double-click `index.html` to open it in your web browser (Chrome, Firefox, Safari, Edge).
-    - _Note: For the 3D Solar System game, some browsers might block local texture loading if you simply open the file. If you see issues, try running a local server._
+    - _Note: For the 3D scenes, some browsers might block texture loading if opened directly. If you see blank screens, try running a local server._
 
 ### Running with a Local Server (Recommended)
 
@@ -30,25 +42,13 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000` in your browser.
 
-## How to Play 🕹️
-
-- **Memory Cards**: Find matching pairs of cards by flipping them over.
-- **Pattern (Simon)**: Watch the sequence of lights and repeat it.
-- **Sorting**: Drag the items into the correct category bucket (e.g., Animals vs Fruits).
-- **Puzzle**: Slide the tiles to put the numbers in order (1, 2, 3...).
-- **Maze**: Guide the blue dot to the checkered flag using arrow keys or on-screen buttons.
-- **Counting**: Answer the math or counting question by tapping the correct number.
-- **Space**: Drag to look around the solar system. Click/Tap on planets to learn fun facts!
-
-## Credits & Technologies 🛠️
+## Tech Stack 🛠️
 
 - **Core**: HTML5, CSS3, Vanilla JavaScript (ES6 Modules).
 - **Animations**: [Anime.js](https://animejs.com/)
 - **Audio**: [Howler.js](https://howlerjs.com/)
 - **Interactions**: [Interact.js](https://interactjs.io/)
 - **3D Graphics**: [Three.js](https://threejs.org/)
-- **Icons**: Standard System Emojis & CSS Shapes.
-- **Fonts**: [Fredoka](https://fonts.google.com/specimen/Fredoka) (Google Fonts).
 
 ## Privacy Note 🔒
 
